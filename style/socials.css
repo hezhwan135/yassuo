@@ -1,0 +1,345 @@
+.socials-container{
+  border-bottom: 1px solid rgba(90, 90, 90, 0.35);
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  background-position: 50% 37%;
+  padding-bottom: 42px;
+  padding-top: 30px;
+}
+
+.socials-content-container{
+  width: 70%;
+  margin: 0 0 0 14%;
+}
+
+.socials{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .socials-content-container{
+    width: 90%;
+    margin: 0;
+  }
+
+  .socials{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .socials-header{
+    text-align: center;
+    margin: 0;
+    display: inline;
+    margin-bottom: 50px;
+  }
+
+  
+  .socials-header h1{
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .socials-content-container{
+    width: 90%;
+    margin: 0;
+  }
+
+}
+
+.socials-header {
+  color: white;
+  font-size: 28px;
+  margin-left: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* KICK Social */
+
+.kick-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  min-width: 200px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid rgb(0, 209, 0);
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, rgb(0, 209, 0) 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.kick-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.kick-card p{
+  color: rgb(170, 170, 170);
+  margin-left: 10px;
+  margin-top: -6px;
+}
+
+.kick-card:hover p {
+  color: white;
+}
+
+.kick-card img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* Discord Social */
+
+.discord-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid #5865F2;
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  cursor: pointer;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #5865F2 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+}
+
+.discord-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.discord-card img{
+  width: 50px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+/* X Social */
+
+.x-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, rgb(0, 0, 0) 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.x-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.x-card img{
+  width: 50px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+/* Instagram Social */
+
+.instagram-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid #ee2a7b;
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%,  #ee2a7b 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.instagram-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.instagram-card img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* tiktok Social */
+
+.tiktok-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%,  #000000 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.tiktok-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.tiktok-card img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* Facebook Social */
+
+.facebook-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid rgb(69, 118, 255);
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #1877F2 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.facebook-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.facebook-card img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* Twitch Social */
+
+.twitch-card{
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  height: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50px 100%;
+  border: 2px solid #6441a5;
+  border-radius: 300px;
+  width: fit-content;
+  block-size: fit-content;
+  padding-right: 20px;
+  background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #6b2497 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.twitch-card h1{
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.twitch-card img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+
+
+
+/* Hover Social */
+.kick-card:hover{
+  background-position: left;
+}
+
+.x-card:hover{
+  background-position: left;
+}
+
+.discord-card:hover{
+  background-position: left;
+}
+
+.instagram-card:hover{
+  background-position: left;
+}
+
+
+.tiktok-card:hover{
+  background-position: left;
+}
+
+.facebook-card:hover{
+  background-position: left;
+}
+
+
+.twitch-card:hover{
+  background-position: left;
+}
+
+
+
+

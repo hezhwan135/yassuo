@@ -1,0 +1,138 @@
+.about-background{
+  background-color: rgb(19, 19, 19);
+  border-bottom: 1px solid rgb(30, 30, 30);
+}
+
+.about-container{
+  width: 70%;
+  margin: 0 0 0 15%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card{
+  margin-left: 100px;
+  border: 1px solid rgb(112, 112, 112);
+  height: fit-content;
+}
+
+.about-header{
+  color: rgb(43, 255, 0);
+}
+
+.profile-card h2{
+  color: white;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(36, 36, 36);
+  margin-top: -4px;
+  padding: 5px 0 5px 0;
+}
+
+
+.about-container h1{
+  color: white;
+  font-size: 3.5em;
+  margin-left: 35px;
+  width: 100%;
+}
+
+.about-container p{
+  color: rgb(200, 200, 200);
+  margin-left: 35px;
+  margin-top: 30px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.about-text h2{
+  margin-left: 35px;
+  color: rgb(200, 200, 200);
+}
+
+.profile-card img{
+  width: 350px;
+}
+.profile-information{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-information-info i{
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+
+.profile-information-info{
+  display: flex;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  align-items: center;
+}
+
+.profile-information p{
+  padding: 0;
+  margin: 0 0 0 10px;
+  color: rgb(194, 194, 194);
+}
+
+.profile-information-info img{
+  width: 25px;
+  height: 25px;
+}
+
+
+@media only screen and (max-width: 1140px) {
+  .about-container{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .profile-card{
+    margin-top: 50px;
+  }
+
+  .profile-picture img{
+    width: 100%;
+  }
+
+  .profile-information-info img{
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .about-container{
+    width: 95%;
+  }
+
+  .about-container p{
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  
+  .profile-picture img{
+    width: 100%;
+  }
+
+  .profile-card{
+    margin: 0;
+  }
+
+  .about-container h1{
+    display: inline;
+    margin: 0;
+  }
+  
+  }
+  
+

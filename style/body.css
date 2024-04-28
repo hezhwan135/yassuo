@@ -1,0 +1,525 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* HERO SECTION */
+
+.hero-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 100px 15% 0 15%;
+}
+
+.hero-section-background{
+  padding: 50px 0 50px 0;
+}
+
+.hero-socials-background{
+  background-image: url("../images/socials/socials-background2.png");
+  background-size: cover;
+  background-position: 270px -30%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-socials-background{
+    background-position: 0 -30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-socials-background{
+    background-position: -1050px 0px;
+  }
+}
+
+
+/* HERO SECTION LEFT SIDE*/
+
+.hero-left-side{
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color : transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-left-side iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-left-side img{
+  width: 100%;
+}
+
+/* HERO SECTION RIGHT SIDE*/
+
+.hero-right-side{
+  padding: 60px 30px 0 30px;
+  width: 100%;
+}
+
+.right-side-background{
+  background-color: rgba(39, 39, 39, 0.158);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hero-right-side span{
+  color: rgb(43, 255, 0);
+}
+
+.hero-right-side h1{
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero-right-side p{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(201, 201, 201);
+}
+
+.hero-right-side h1{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.kick-button{
+  cursor: pointer;
+  border: none;
+  margin-top: 25px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.kick-button img{
+  width: 130px;
+  transition: all 0.3s ease;
+  border: 1px solid rgb(22, 22, 22);
+  border-radius: 5px;
+}
+
+.kick-button img:hover{
+  transform: scale(1.05);
+  box-shadow: 2px -2px 35px -7px rgba(255,255,255,0.75);
+  -webkit-box-shadow: 2px -2px 20px -7px rgba(0, 255, 0, 0.75);
+  -moz-box-shadow: 2px -2px 35px -7px rgba(255,255,255,0.75);
+  border-bottom-right-radius: 20px;
+}
+
+.right-side-underline{
+  border-bottom: 1px solid rgb(43, 255, 0);
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .hero-right-side{
+    width: 95%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-left-side{
+    width: 95%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 15px;
+
+  }
+  
+}
+
+/* CARDS */
+
+.cards-background{
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  background-position: 700px 0%;
+  background-size: cover;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 50px 0 100px 0;
+  align-items: center;
+  margin-left: 15%;
+}
+
+.cards-header{
+  width: 100%;
+  display: block;
+  margin: 0 50px 0 50px;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+  .cards-container{
+    width: 100%;
+    margin: 2px;
+  }
+  
+}
+
+.cards-header h1{
+  display: block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards-header p{
+  display: block;
+  width: 100%;
+  color: rgb(200, 200, 200);
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.flip-card-back i{
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.flip-card-back p{
+  line-height: 1.6;
+}
+
+.flip-card-back h1{
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+.cards-header a{
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.flip-card img{
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #1c2c54;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.flip-card-back img{
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/*  ASKER */
+
+
+
+/*  ASKER */
+
+.asker-background{
+  background-position: 10% 100%;
+  border-bottom: 1px solid rgba(90, 90, 90, 0.35);
+  border-top: 1px solid rgba(90, 90, 90, 0.35);
+  padding: 40px 0 40px 0;
+  background-color: rgb(20, 20, 20);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.ask-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 60%;
+  margin-left: 23%;
+  gap: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .ask-section{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.asker{
+  background-image: url("../images/RNB-Background.jpg");
+  background-size: cover;
+  border: 1px solid rgb(90, 90, 90);
+  background-position: 50% 50%;
+  border-radius: 50px;
+  max-width: 450px;
+}
+
+.magic-8-ball {
+  text-align: center;
+  background-image: url("../images/8-ball-background.jpg");
+  background-size: cover;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 50px;
+  max-width: 450px;
+}
+
+.search-button{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.magic-8-ball img{
+  width: 150px;
+}
+
+.yassuos-ball img{
+  width: 200px;
+}
+
+
+.ask-section h1{
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ask-section h2{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+
+.magic-8-ball input{
+  background-color: #ffffff00;
+  max-width: 250px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 0 0 0 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .magic-8-ball input{
+    width: 100px;
+  }
+}
+
+.magic-8-ball input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.magic-8-ball button{
+  min-height: 40px;
+  max-height: 40px;
+  width: 80px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 80px;
+  cursor: pointer;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.658) 50%,  #53f869 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  border: 1px solid rgb(255, 255, 255);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: none;
+}
+
+.magic-8-ball button:hover{
+  background-position: left;
+}
+
+.magic-8-ball input::placeholder{
+  background-color: #ffffff00;
+  color: white;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* Adjust the color to make it visible */
+  justify-content: center;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0); }
+}
+
+.asker-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  height: 300px;
+}
+
+input[type="number"] {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid #3f4100;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.322);
+  color: white;
+}
+
+input[type="number"]::placeholder {
+  color: white;
+}
+
+.answer-button{
+  display: flex;
+  height: 28px;
+  background-color: rgba(158, 158, 158, 0);
+  border-radius: 10px;
+  background-color: rgba(158, 158, 158, 0);
+  min-height: 40px;
+  max-height: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600px;
+  font-weight: bold;
+  border: none;
+  height: 28px;
+  border: 1px solid white;
+  border-radius: 20px;
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+
+}
+
+
+.asker-container button {
+  min-height: 40px;
+  max-height: 40px;
+  color: white;
+  font-size: 16px;
+  min-width: 80px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.658) 50%, #f1151596 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.asker-container button:hover{
+  background-position: left;
+}
+
+
+.answer-button p{
+  color: white;
+  padding: 10px;
+
+}
+
+.background-darker{
+  backdrop-filter: blur(3px);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  height: 100%;
+  border-radius: 50px;
+}

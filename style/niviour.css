@@ -1,0 +1,86 @@
+.niviour-background{
+  height: 500px; /* Set initial height */
+  background-image: url("../images/niviour/niviour-background.jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+  border-top: 2px solid rgb(50, 50, 50);
+  border-bottom: 2px solid rgb(50, 50, 50);
+  overflow: hidden;
+  transition: height 0.3s ease; /* Add transition */
+}
+
+.niviour-background-darker{
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(0px);
+  transition: all 0.5s ease;
+}
+
+.niviour-header h1{
+  font-size: 100px;
+  color: rgb(230, 230, 230);
+}
+
+.niviour-header p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px; 
+  color: rgb(200, 200, 200);
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.niviour-header button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+  position: relative;
+
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.niviour-button-arrow{
+  position: absolute;
+  top: 50%;
+  right: -83%;
+  transform: translateY(-50%);
+  display: none; /* Initially hidden */
+}
+
+@keyframes slideFromLeft {
+  from {
+      left: -20px; /* Adjust based on the width of your arrow */
+  }
+  to {
+      left: 0;
+  }
+}
+
+.niviour-header button:hover {
+  background-position: left bottom;
+  padding-right: 30px;
+}
+
+.niviour-header button:hover .niviour-button-arrow{
+  display: block; /* Show arrow on hover */
+  animation: slideFromLeft 0.3s forwards; /* Animation to slide in */
+}
+
+.niviour-header button:hover{
+  color: rgb(50, 50, 50);  
+}
+
+.niviour-button:hover ~ .niviour-background {
+  transform: scale(1.05); /* Zoom in effect */
+}
