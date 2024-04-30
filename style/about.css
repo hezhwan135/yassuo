@@ -111,12 +111,12 @@
 @media only screen and (max-width: 400px) {
   .about-container{
     width: 95%;
+    margin-left:2.5%;
   }
 
   .about-container p{
     width: 100%;
     margin: 0;
-    margin-left: 10px;
   }
   
   
